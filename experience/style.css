@@ -464,3 +464,236 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* ===== CV SECTIONS ===== */
+
+/* summary box */
+.summary-box, .expertise-box, .projects-box, .skills-box, .cert-box, .edu-box, .lang-box {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+.summary-box h3, .expertise-box h3, .projects-box h3,
+.skills-box h3, .cert-box h3, .edu-box h3, .lang-box h3 {
+  font-size: 2rem;
+  color: #02094b;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #f68c09;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+.summary-box h3 i, .expertise-box h3 i, .projects-box h3 i,
+.skills-box h3 i, .cert-box h3 i, .edu-box h3 i, .lang-box h3 i {
+  color: #f68c09;
+  margin-right: .7rem;
+}
+.summary-box p {
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+/* timeline bullet lists */
+.experience .content .desc ul {
+  margin: .8rem 0 0 1.5rem;
+  padding: 0;
+}
+.experience .content .desc ul li {
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin-bottom: .4rem;
+  list-style: disc;
+  text-transform: none;
+}
+.experience .content .desc p {
+  font-size: 1.25rem;
+  text-transform: none;
+}
+.experience .content .desc p i {
+  margin-right: .4rem;
+  color: #02094b;
+}
+
+/* expertise grid */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1rem;
+}
+.expertise-grid span {
+  font-size: 1.4rem;
+  color: #333;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.expertise-grid span i {
+  color: #f68c09;
+  flex-shrink: 0;
+}
+
+/* project cards */
+.project-card {
+  background: #f9f9f9;
+  border-left: 4px solid #f68c09;
+  border-radius: .6rem;
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.8rem;
+}
+.project-card h4 {
+  font-size: 1.6rem;
+  color: #02094b;
+  margin-bottom: .6rem;
+  text-transform: none;
+}
+.project-card .tech-stack {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: .8rem;
+  text-transform: none;
+}
+.project-card .tech-stack i {
+  color: #f68c09;
+  margin-right: .4rem;
+}
+.project-card p {
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1.7;
+  text-transform: none;
+}
+.badge {
+  background: #f68c09;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: .2rem .7rem;
+  border-radius: 2rem;
+  margin-left: .8rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;
+}
+.skill-group {
+  background: #f9f9f9;
+  border-radius: .6rem;
+  padding: 1.4rem 1.8rem;
+  border-top: 3px solid #f68c09;
+}
+.skill-group h4 {
+  font-size: 1.4rem;
+  color: #02094b;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .04rem;
+}
+.skill-group p {
+  font-size: 1.35rem;
+  color: #555;
+  text-transform: none;
+}
+
+/* certifications */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.cert-group {
+  background: #f9f9f9;
+  border-radius: .6rem;
+  padding: 1.4rem 1.8rem;
+  border-top: 3px solid #2b3dda;
+}
+.cert-group h4 {
+  font-size: 1.4rem;
+  color: #02094b;
+  margin-bottom: .8rem;
+  text-transform: uppercase;
+}
+.cert-group ul {
+  margin-left: 1.5rem;
+}
+.cert-group ul li {
+  font-size: 1.35rem;
+  color: #444;
+  margin-bottom: .4rem;
+  text-transform: none;
+}
+
+/* education grid */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+.edu-card {
+  background: #f9f9f9;
+  border-radius: .6rem;
+  padding: 1.6rem 2rem;
+  border-top: 3px solid #f68c09;
+}
+.edu-card h4 {
+  font-size: 1.5rem;
+  color: #02094b;
+  margin-bottom: .5rem;
+  text-transform: none;
+}
+.edu-card p {
+  font-size: 1.35rem;
+  color: #555;
+  text-transform: none;
+  margin-bottom: .3rem;
+}
+.edu-card p i {
+  color: #f68c09;
+  margin-right: .4rem;
+}
+
+/* languages */
+.lang-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f9f9f9;
+  border-radius: .6rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #02094b;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.lang-item .level {
+  background: #f68c09;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: .2rem .8rem;
+  border-radius: 2rem;
+  font-weight: 400;
+}
+
+/* responsive adjustments */
+@media(max-width: 600px) {
+  .summary-box, .expertise-box, .projects-box, .skills-box, .cert-box, .edu-box, .lang-box {
+    padding: 2rem 1.5rem;
+  }
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}
